@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Helmet from "react-helmet";
 import Loader from "Components/Loader";
+import { FaYoutube } from "react-icons/fa";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -72,6 +73,7 @@ const Overview = styled.p`
   width: 50%;
   margin-bottom: 30px;
   height: 10%;
+  overflow: auto;
 `;
 
 const BtnContainer = styled.div`
@@ -93,6 +95,9 @@ const ReviewBtn = styled.div`
   background: rgba(255, 255, 255, 0.3);
   font-weight: bold;
   cursor: pointer;
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
 `;
 
 const UnderConatiner = styled.div`
@@ -122,8 +127,15 @@ const A = styled.a`
   justify-content: center;
 `;
 
-const YtTitle = styled.div`
-  font-weight: 700;
+// const YtTitle = styled.span`
+//   font-size: 13px;
+//   font-weight: 700;
+// `;
+
+const Icon = styled.span`
+  font-size: 25px;
+  opacity: 0.8;
+  margin-bottom: -5px;
 `;
 
 const Youtube = styled.img`
@@ -133,25 +145,25 @@ const Youtube = styled.img`
   max-width: 250px;
 `;
 
-const OtContainer = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  flex-direction: column;
-  justify-content: space-around;
-`;
+// const OtContainer = styled.div`
+//   width: 50%;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   padding: 10px;
+//   flex-direction: column;
+//   justify-content: space-around;
+// `;
 
-const Collections = styled.div`
-  margin-top: 12px;
-  width: 100%;
-  height: 87%;
-  background-image: url(${(props) => props.bgImage});
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-`;
+// const Collections = styled.div`
+//   margin-top: 12px;
+//   width: 100%;
+//   height: 87%;
+//   background-image: url(${(props) => props.bgImage});
+//   background-position: center center;
+//   background-size: cover;
+//   border-radius: 5px;
+// `;
 
 const DetailPresenter = ({ result, loading, error }) =>
   loading ? (
@@ -227,7 +239,9 @@ const DetailPresenter = ({ result, loading, error }) =>
           </BtnContainer>
           <UnderConatiner>
             <YtContainer>
-              <YtTitle>Youtube Trailer</YtTitle>
+              <Icon>
+                <FaYoutube></FaYoutube>
+              </Icon>
               <A
                 target="_blank"
                 rel="noopener noreferrer"
