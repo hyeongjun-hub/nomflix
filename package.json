@@ -33,7 +33,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://dazzling-lichterman-5776d5.netlify.app/",
+  "homepage": "https://hyeongjun-hub.github.io/nomflix",
   "browserslist": {
     "production": [
       ">0.2%",
