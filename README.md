@@ -1,13 +1,14 @@
 # Nomflix
+#https://hyeongjun-hub.github.io/nomflix
 
 Learning React and ES6 by building a Movie Discovery App.
 
 ## Screens
 
-- [ ] Home
-- [ ] TV Shows
-- [ ] Search
-- [ ] Detail
+- [x] Home
+- [x] TV Shows
+- [x] Search
+- [x] Detail
 
 ## API Verbs
 
@@ -18,4 +19,4 @@ Learning React and ES6 by building a Movie Discovery App.
 - [x] Airing Today (TV)
 - [x] Movie Deatil
 - [x] TV Detail
-- [ ] Search (TV, Movie)
+- [x] Search (TV, Movie)
